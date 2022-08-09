@@ -313,9 +313,11 @@ nav{
   cursor: pointer;
   color: white;
   padding: 2px;
-  
 }
-
+.close:active{
+  background-color: rgb(88, 87, 87);
+  color:black
+}
 .productImg{
   width: 50%;
   margin-left: 1.5rem
@@ -341,6 +343,12 @@ nav{
 .productDetails button:hover{
   border: 1px solid black;
   font-weight: 700;
+}
+
+.productDetails button:active {
+  background-color: rgb(55, 55, 55);
+  color: white;
+  transition: .15s ease-in-out;
 }
 
 .colors, .sizes {
