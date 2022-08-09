@@ -28,7 +28,7 @@ const products = [
       },
       {
         code: "green",
-        img: "./img/jordan2.png.png",
+        img: "./img/jordan2.png",
       },
     ],
   },
@@ -39,11 +39,11 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "./img/blazer.png.png",
+        img: "./img/blazer.png",
       },
       {
         code: "green",
-        img: "./img/blazer2.png.png",
+        img: "./img/blazer2.png",
       },
     ],
   },
@@ -54,11 +54,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "./img/crater.png.png",
+        img: "./img/crater.png",
       },
       {
         code: "lightgray",
-        img: "./img/crater2.png.png",
+        img: "./img/crater2.png",
       },
     ],
   },
@@ -69,11 +69,11 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "./img/hippie.png.png",
+        img: "./img/hippie.png",
       },
       {
         code: "black",
-        img: "./img/hippie2.png.png",
+        img: "./img/hippie2.png",
       },
     ],
   },
@@ -99,6 +99,17 @@ menuItems.forEach((item, index) => {
     currentProductTitle.textContent = chosenProduct.title;
     currentProductPrice.textContent = "$" + chosenProduct.price;
     currentProductImg.src = chosenProduct.colors[0].img;
-    currentProductColors.src = chosenProduct.colors;
+
+    //assign new colors
+    currentProductColors.forEach((shoColor, index) => {
+      shoColor.style.backgroundColor = chosenProduct.colors[index].code;
+    });
+  });
+});
+
+//assign shoe img to shoe color
+currentProductColors.forEach((shoeStyle, index) => {
+  shoeStyle.addEventListener("click", () => {
+    currentProductImg.src = chosenProduct.colors[index].img;
   });
 });
