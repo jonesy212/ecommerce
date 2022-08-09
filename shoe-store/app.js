@@ -86,6 +86,7 @@ let currentProductTitle = document.querySelector(".productTitle");
 let currentProductPrice = document.querySelector(".productPrice");
 let currentProductColors = document.querySelectorAll(".color");
 let currentProductSizes = document.querySelectorAll(".size");
+let checkoutOrder = document.querySelector(".payButton");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -123,4 +124,16 @@ currentProductSizes.forEach((size, index) => {
     size.style.backgroundColor = "black";
     size.style.color = "white";
   });
+});
+
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector("payment");
+const close = document.querySelector("close");
+
+productButton.addEventListener("click", () => {
+  payment.style.display = "flex";
+});
+
+productButton.addEventListener("click", () => {
+  payment.style.display = "none";
 });
