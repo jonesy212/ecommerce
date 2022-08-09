@@ -7,8 +7,7 @@ body{
 nav{
   background-color: #111;
   color: white;
-  padding: 20px 50px;
-
+  padding: 20px  20px 0 20px;
 }
 
 .navTop {
@@ -51,4 +50,135 @@ nav{
   cursor: pointer;
   color: lightgray;
   font-weight: 400;
+  margin-bottom: 0;
 }
+
+.slider{
+  background: url('https://images.unsplash.com/photo-1587296104393-8db6cda4418d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJhc2tldGJhbGx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+  /* clip-path: polygon(66% 0, 100% 1%, 92% 73%, 0 76%, 0 1%); */
+}
+
+.sliderWrapper{
+  display: flex;
+  width: 500vw
+}
+
+.sliderItem{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 95px;
+}
+
+.sliderTitle, .sliderPrice{
+  position: absolute;
+  top: 10%;
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+}
+.sliderTitle{
+  right: 13rem;
+  font-weight: 900;
+  
+}
+.sliderPrice{
+  left: 10%;
+  font-weight: 600;
+  border: 1px solid gray;
+  padding:0;
+  z-index: 1;
+  font-size: 4.5rem;
+}
+.sliderImage{
+  z-index: 10;
+  width: 38rem;
+  bottom: 12%;
+  position: relative;
+}
+.sliderbg{
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position:absolute;
+  bottom: 18%;
+  left: 25%
+}
+.sliderItem:nth-child(1) .sliderbg{
+  background-color: rgb(142, 81, 175)
+}
+.sliderItem:nth-child(2) .sliderbg{
+  background-color: rgb(144, 77, 180)
+}
+
+.sliderItem:nth-child(3) .sliderbg{
+  background-color: rgb(127, 68, 158)
+}
+.sliderItem:nth-child(4) .sliderbg{
+  background-color: rgb(102, 54, 128)
+}
+.sliderItem:nth-child(5) .sliderbg{
+  background-color: rgb(53 26 67);
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+  color: rgb(124, 71, 152)
+}
+.sliderItem:nth-child(2) .sliderPrice{
+  color: rgb(170, 134, 190)
+}
+.sliderItem:nth-child(3) .sliderPrice{
+  color: rgb(161, 86, 201);
+}
+.sliderItem:nth-child(4) .sliderPrice{
+  color: rgb(174, 91, 219);
+}
+.sliderItem:nth-child(5) .sliderPrice{
+  color: rgb(169, 90, 211);
+}
+
+.sliderItem:nth-child(2) .sliderTitle{
+  color: rgb(170, 134, 190);
+  right: 11.7rem
+}
+.sliderItem:nth-child(3) .sliderTitle{
+  color: rgb(161, 86, 201);
+  right: 15.2rem;
+}
+.sliderItem:nth-child(4) .sliderTitle{
+  color: rgb(174, 91, 219);
+  right: 15.2rem;
+}
+
+.sliderItem:nth-child(5) .sliderTitle{
+  color: rgb(169, 90, 211);
+  right: 15.2rem;
+}
+
+.buy-now-btn{
+  color:white;
+  font-weight: 900;
+  border: 1px solid gray;
+  background-color: black;
+  z-index: 1;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-top: 10rem;
+}
+
+
+.buy-now-btn:nth-child(2){
+  right: 16.7rem;
+  position: absolute;
+}
+
+.buy-now-btn:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+ 
+}
+
