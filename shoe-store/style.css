@@ -37,6 +37,10 @@ nav{
   font-size: 20px;
   border-bottom: 2px solid green;
 }
+.limitedOffer:hover{
+  border-bottom: 2px solid rgb(154, 249, 154) ;
+  transition-duration: .3s ;
+}
 
 .navBottom{
   display: flex;
@@ -82,7 +86,7 @@ nav{
   color: white;
 }
 .sliderTitle{
-  right: 13rem;
+  right: 7rem;
   font-weight: 900;
   
 }
@@ -141,25 +145,31 @@ nav{
   color: rgb(169, 90, 211);
 }
 
+.sliderItem:nth-child(1) .sliderTitle{
+  color: rgb(170, 134, 190);
+  right: 7rem
+}
+
 .sliderItem:nth-child(2) .sliderTitle{
   color: rgb(170, 134, 190);
-  right: 11.7rem
+  right:  5.8rem;
 }
 .sliderItem:nth-child(3) .sliderTitle{
   color: rgb(161, 86, 201);
-  right: 15.2rem;
+  right: 9rem;
 }
 .sliderItem:nth-child(4) .sliderTitle{
   color: rgb(174, 91, 219);
-  right: 15.2rem;
+  right: 9rem;
 }
 
 .sliderItem:nth-child(5) .sliderTitle{
   color: rgb(169, 90, 211);
-  right: 15.2rem;
+  right: 9rem;
 }
 
-.buy-now-btn{
+.buy-now-btn, 
+.productDetails button{
   color:white;
   font-weight: 900;
   border: 1px solid gray;
@@ -170,6 +180,10 @@ nav{
   cursor: pointer;
   margin-top: 10rem;
 }
+.sliderItem button{
+  position: absolute;
+  right: 120px;
+}
 
 
 .buy-now-btn:nth-child(2){
@@ -177,7 +191,8 @@ nav{
   position: absolute;
 }
 
-.buy-now-btn:hover{
+.buy-now-btn:hover,
+.productDetails button:hover{
   background-color: white;
   color: black;
   border: 1px solid black;
@@ -210,4 +225,64 @@ nav{
   color: gray;
   width: 50%;
   height: 100px
+}
+
+.product{
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+  clip-path: polygon(3% 0, 89% 2%, 95% 75%, 0 0900%, -2% 49%);  
+}
+
+.productImg{
+  width: 50%;
+  margin-left: 1.5rem
+}
+
+.productDetails{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 40%;
+}
+
+.producTitle{
+  font-size: 75px;
+  color: gray;
+}
+
+.productDetails button{
+  float: right;
+  font-weight: 600;
+  padding: 1rem 
+}
+.productDetails button:hover{
+  border: 1px solid black;
+  font-weight: 700;
+}
+
+.colors, .sizes {
+  display: flex;
+  margin-bottom: 20px
+}
+
+.color{
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: black
+}
+
+.color:nth-child(2){
+  border: 1px solid;
+  background-color: darkblue 
+}
+
+.size{
+  padding: 5px 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
 }
