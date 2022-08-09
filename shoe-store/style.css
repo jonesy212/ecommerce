@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Hind', 'Lato', 'Montserrat', sans-serif;
   padding: 0;

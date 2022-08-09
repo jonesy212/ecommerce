@@ -101,8 +101,8 @@ menuItems.forEach((item, index) => {
     currentProductImg.src = chosenProduct.colors[0].img;
 
     //assign new colors
-    currentProductColors.forEach((shoColor, index) => {
-      shoColor.style.backgroundColor = chosenProduct.colors[index].code;
+    currentProductColors.forEach((shoeColor, index) => {
+      shoeColor.style.backgroundColor = chosenProduct.colors[index].code;
     });
   });
 });
@@ -111,5 +111,16 @@ menuItems.forEach((item, index) => {
 currentProductColors.forEach((shoeStyle, index) => {
   shoeStyle.addEventListener("click", () => {
     currentProductImg.src = chosenProduct.colors[index].img;
+  });
+});
+
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "white";
   });
 });
