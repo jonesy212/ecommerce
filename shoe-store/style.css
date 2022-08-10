@@ -319,8 +319,11 @@ nav{
   color:black
 }
 .productImg{
-  width: 50%;
-  margin-left: 1.5rem
+  /* width: 35%; */
+  margin-left: 1.5rem;
+  /* position: absolute */
+  bottom: -79px;
+  z-index: 123;
 }
 
 .productDetails{
@@ -338,7 +341,8 @@ nav{
 .productDetails button{
   float: right;
   font-weight: 600;
-  padding: 1rem 
+  padding: 1rem;
+  margin-top:0 
 }
 .productDetails button:hover{
   border: 1px solid black;
@@ -375,4 +379,87 @@ nav{
   border: 1px solid black;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.gallery{
+  padding: 50px;
+  display: flex;
+  overflow: hidden;
+  padding: 10px
+}
+
+.galleryItem{
+ flex: 1;
+ padding: 2rem
+}
+
+
+.galleryImg{
+  width: 100%
+}
+
+.gallery img{
+  width: 360px;
+}
+
+.newSeason {
+  display:flex;
+}
+
+.nsItem{
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nsItem img {
+  max-height: 500px;
+}
+
+.nsImg{
+  width: 100%;
+}
+
+h3{
+  font-weight: 400;
+  font-size: x-large;
+  margin: 0;
+}
+
+.nsTitle{
+  font-size:40px
+}
+
+
+h1.nsTitleSm:nth-child(2){
+ color: rgb(253,86,2);
+ margin: 0px 0  40px 0;
+ font-size: 35px
+}
+
+.nsTitleSm:nth-child(3){
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.nsButton{
+  padding: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+.nsButton:hover{
+  background-color: rgb(181, 181, 181);
+  color:white
+}
+.nsButton:active{
+  background-color: white;
+  color:  rgb(253,86,2);
 }
