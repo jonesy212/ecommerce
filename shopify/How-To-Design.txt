@@ -3,7 +3,7 @@
 Shopify course
 https://www.youtube.com/playlist?list=PLgNRWQNwPQWxt5WUbPkkxC6LZlPqOB4-p
 
-Learn shopify theme
+Learn Shopify theme
 https://weeklyhow.com/courses/shopify-theme-development-masterclass-learn-how-to-create-shopify-themes/
 look at for classes to research for videos
 
@@ -18,13 +18,13 @@ no inventory needed
 Price - cost = Profit
 
 
-automate with shopify apps
+automate with Shopify apps
 
-aliexpress
+ali-express
 
 Manufactures - pull specs from business - images, price(before upselling on ali express), 
 product details
-verify they offer dropshipping
+verify they offer drop-shipping
 add products to website -products page
 
 market
@@ -38,8 +38,8 @@ Market
 Long term 
 Private labeling brand
 
-how to find dropshipping- shopify apps
-Topdser - chrom extension - allows to import product to your store
+how to find drop-shipping- Shopify apps
+Top user - chrome extension - allows to import product to your store
   2x faster (7-15 days) shipping rates- consolidates products to ship to customer
   
 

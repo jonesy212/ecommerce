@@ -698,8 +698,6 @@ footer{
   }
 }
 
-
-
 @media screen and (max-width: 565px ){
 
   nav{
@@ -707,6 +705,27 @@ footer{
   }
   .product {
     max-height: 80vh
+  }
+}
+
+@media screen and (max-width: 375px){
+
+  .fMenuTitle{
+    font-size: .9rem;
+
+  }
+  .fListItem{
+    font-size: .8rem
+  }
+  .fMenuTitle{
+    font-size: 3.5rem
+  }
+  .productImg{
+    top: 81px;
+    left: 142px;
+  }
+  .sliderImage{
+    font-size: 3rem;
   }
 }
 
